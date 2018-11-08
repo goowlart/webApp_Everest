@@ -1,0 +1,28 @@
+<div class="ui secondary  menu">
+  <a routerLinkActive="active" routerLink="" class="item">
+    Home
+  </a>
+  <a routerLinkActive="active" [routerLink]="['/users' , id]" class="item">
+    Profil
+  </a>
+  <a routerLinkActive="active" routerLink="/users" class="item">
+    Users
+  </a>
+  <a routerLink="create" routerLinkActive="active">Add coins</a>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+    <a routerLinkActive="active" routerLink="/login" class="item">
+      Login
+    </a>
+    <a class="ui item">
+      Register
+    </a>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
